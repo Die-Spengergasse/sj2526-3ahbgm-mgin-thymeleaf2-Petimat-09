@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Katzen Liste</title>
+</head>
+<body>
+    <div>
+        <h1>Katzen Liste</h1>
+        <ul>
+            <li th:each="katze : ${katzen}" th:text="${katze.name}"></li>
+
+        </ul>
+    </div>
+
+</body>
+</html>
