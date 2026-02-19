@@ -22,7 +22,7 @@ public class KatzenController {
     @GetMapping("/list")
     public String katzen(Model model) {
         model.addAttribute("katzen", katzenRepository.findAll());
-        return "katzenlist";
+        return "katzen";
     }
 
     @GetMapping("/add")
